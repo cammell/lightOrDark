@@ -8,10 +8,14 @@ import '../scss/main.scss';
 
 console.log('HELLO 🚀')
 
+const button=document.querySelector('.button_js');
+button.addEventListener('click', toggleLight);
+
 function toggleLight() {
     
-    document.getElementsByClassName('body').toggleClass('dark');
+    var body=document.querySelector('.body');
+    body.classList.toggle("dark");
+    console.log("function toggle was fired");
     
 };
 
-document.getElementById('toggle').onclick=toggleLight();
