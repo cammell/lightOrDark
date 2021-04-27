@@ -12,11 +12,14 @@ body {
 .light {
   background-color: rgb(221, 221, 197);
   color: #000;
+  transition:  background-color 1s linear;
 }
 
 .dark {
   background-color: #270505;
-  color: rgb(201, 197, 197)
+  transition: background-color 1s linear;
+  color: rgb(201, 197, 197);
+  
 }
 
 .button {
